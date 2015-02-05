@@ -1,5 +1,5 @@
 # ABInfiniteScrollView
-Swift infinite scroll view
+Swift infinite scroll view (SWIFT)
 
 
 Infinite scroll view (UIScrollView subclass) [PAGING ONLY ATM]
