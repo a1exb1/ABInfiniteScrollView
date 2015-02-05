@@ -10,16 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var scrollView:InfiniteSubclassExample? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //scrollView?.setTranslatesAutoresizingMaskIntoConstraints(false)
+        scrollView = InfiniteSubclassExample(frame: self.view.bounds)
+        
+        //scrollView.add
+        
+        self.view.addSubview(scrollView!)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
