@@ -9,7 +9,9 @@ Usage:
 1. initialize inside your ViewDidLoad function:
 
 scrollView = ABInfiniteScrollView(frame: self.view.bounds)
+
 scrollView?.infinteScrollDelegate = self
+
 self.view.addSubview(scrollView!)
 
 2. Add ABInfiniteScrollViewDelegate to your view controller
