@@ -7,7 +7,7 @@ Infinite scroll view (UIScrollView subclass) [PAGING ONLY ATM]
 
 Usage:
 
-1. initialize inside your ViewDidLoad function:
+Initialize inside your ViewDidLoad function:
 
 scrollView = ABInfiniteScrollView(frame: self.view.bounds)
 
@@ -15,14 +15,13 @@ scrollView?.infinteScrollDelegate = self
 
 self.view.addSubview(scrollView!)
 
+--
 
+Add ABInfiniteScrollViewDelegate to your view controller
 
-2. Add ABInfiniteScrollViewDelegate to your view controller
+--
 
-
-
-3. Implement delegate methods
-
+Implement delegate methods
 
 
 func infiniteScrollViewDidScroll(direction: ABInfiniteScrollDirection)
