@@ -17,14 +17,11 @@ self.view.addSubview(scrollView!)
 
 
 
-
 2. Add ABInfiniteScrollViewDelegate to your view controller
 
 
 
-
 3. Implement delegate methods
-
 
 
 
