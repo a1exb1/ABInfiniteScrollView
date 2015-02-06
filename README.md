@@ -4,7 +4,6 @@ Swift infinite scroll view (SWIFT)
 
 Infinite scroll view (UIScrollView subclass) [PAGING ONLY ATM]
 
---
 
 Usage:
 
@@ -16,15 +15,18 @@ scrollView?.infinteScrollDelegate = self
 
 self.view.addSubview(scrollView!)
 
---
+
+
 
 2. Add ABInfiniteScrollViewDelegate to your view controller
 
---
+
+
 
 3. Implement delegate methods
 
---
+
+
 
 func infiniteScrollViewDidScroll(direction: ABInfiniteScrollDirection)
 
