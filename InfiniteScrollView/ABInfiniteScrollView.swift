@@ -45,7 +45,7 @@ class ABInfiniteScrollView: UIScrollView, ABInfiniteScrollViewDelegate {
         self.contentOffset = CGPointMake(self.bounds.width * 2, 0);
         currentViewPositionIndex = 2
         self.infinteScrollDelegate = self
-        //self.showsHorizontalScrollIndicator = false
+        self.showsHorizontalScrollIndicator = false
     }
     
     required init(coder aDecoder: NSCoder) {
