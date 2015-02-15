@@ -16,7 +16,6 @@ class InfiniteSubclassExample: ABInfiniteScrollView {
         for view in self.views{
             //do what you want with hidden views        
         }
-        
         direction == .Left ? i-- : i++
     }
     

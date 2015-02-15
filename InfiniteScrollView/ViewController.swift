@@ -14,13 +14,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //scrollView?.setTranslatesAutoresizingMaskIntoConstraints(false)
         scrollView = InfiniteSubclassExample(frame: self.view.bounds)
-        
-        //scrollView.add
-        
         self.view.addSubview(scrollView!)
     }
-
 }
 

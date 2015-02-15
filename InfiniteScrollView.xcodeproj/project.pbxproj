@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E46489891A8432F600C8763A /* ViewControllerDirect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46489881A8432F600C8763A /* ViewControllerDirect.swift */; };
 		E48DF6B31A7E7FE60082B8B8 /* InfiniteSubclassExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48DF6B21A7E7FE60082B8B8 /* InfiniteSubclassExample.swift */; };
 		E49A5F211A7E5CFF009A10BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A5F201A7E5CFF009A10BD /* AppDelegate.swift */; };
 		E49A5F231A7E5CFF009A10BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A5F221A7E5CFF009A10BD /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E46489881A8432F600C8763A /* ViewControllerDirect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDirect.swift; sourceTree = "<group>"; };
 		E48DF6B21A7E7FE60082B8B8 /* InfiniteSubclassExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteSubclassExample.swift; sourceTree = "<group>"; };
 		E49A5F1B1A7E5CFF009A10BD /* InfiniteScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49A5F1F1A7E5CFF009A10BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				E49A5F1E1A7E5CFF009A10BD /* Supporting Files */,
 				E49A5F401A7E5D20009A10BD /* ABInfiniteScrollView.swift */,
 				E48DF6B21A7E7FE60082B8B8 /* InfiniteSubclassExample.swift */,
+				E46489881A8432F600C8763A /* ViewControllerDirect.swift */,
 			);
 			path = InfiniteScrollView;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E49A5F231A7E5CFF009A10BD /* ViewController.swift in Sources */,
+				E46489891A8432F600C8763A /* ViewControllerDirect.swift in Sources */,
 				E49A5F411A7E5D20009A10BD /* ABInfiniteScrollView.swift in Sources */,
 				E48DF6B31A7E7FE60082B8B8 /* InfiniteSubclassExample.swift in Sources */,
 				E49A5F211A7E5CFF009A10BD /* AppDelegate.swift in Sources */,

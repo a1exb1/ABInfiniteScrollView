@@ -45,7 +45,7 @@ class ABInfiniteScrollView: UIScrollView, ABInfiniteScrollViewDelegate {
         self.contentOffset = CGPointMake(self.bounds.width * 2, 0);
         currentViewPositionIndex = 2
         self.infinteScrollDelegate = self
-        self.showsHorizontalScrollIndicator = false
+        //self.showsHorizontalScrollIndicator = false
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -53,6 +53,18 @@ class ABInfiniteScrollView: UIScrollView, ABInfiniteScrollViewDelegate {
     }
     
     //func onDid
+    
+    func onDidRotate(bounds:CGRect){
+        self.contentSize = CGSizeMake(bounds.width * 5, bounds.size.height);
+        self.contentOffset = CGPointMake(bounds.width * CGFloat(self.currentViewPositionIndex + 1), 0);
+        self.frame = bounds
+        var startPosition:CGFloat = 0
+        for (var i:CGFloat = 0; i < 5; i++){
+            var plus:CGFloat = bounds.width * i
+            self.views[Int(i)].frame = CGRect(x: startPosition + plus, y: 0, width: bounds.width, height: bounds.height)
+        }
+        replaceView()
+    }
     
     // recenter content periodically to achieve impression of infinite scrolling
     func recenterIfNecessary()
@@ -111,9 +123,7 @@ class ABInfiniteScrollView: UIScrollView, ABInfiniteScrollViewDelegate {
             }
             replaceView()
             setup = true
-            
         }
-        
     }
     
     func replaceView(){
@@ -126,6 +136,7 @@ class ABInfiniteScrollView: UIScrollView, ABInfiniteScrollViewDelegate {
         self.addSubview(v)
     }
     
+    //will be overrided
     func infiniteScrollViewNewView(frame:CGRect, pageFrame:CGRect) -> UIView {
         var rc = UIView(frame: frame)
         rc.backgroundColor = UIColor.blackColor()
